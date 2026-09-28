@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>PlayStead — Offline Games for iPhone and iPad</title>
+
+  <meta name="description"
+        content="PlayStead brings 12 offline games together in one simple collection for iPhone and iPad. No ads, no subscriptions, no account required.">
+
+  <style>
+    :root {
+      color-scheme: light dark;
+
+      --background: #f5f7fb;
+      --card: rgba(255, 255, 255, 0.88);
+      --text: #152038;
+      --secondary: #657085;
+      --accent: #1265e8;
+      --border: rgba(20, 32, 56, 0.10);
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --background: #07132c;
+        --card: rgba(16, 31, 64, 0.90);
+        --text: #f4f6fb;
+        --secondary: #abb6ca;
+        --accent: #5aa1ff;
+        --border: rgba(255, 255, 255, 0.10);
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "SF Pro Display",
+        "SF Pro Text",
+        "Helvetica Neue",
+        Arial,
+        sans-serif;
+      background: var(--background);
+      color: var(--text);
+      display: flex;
+      flex-direction: column;
+    }
+
+    main {
+      flex: 1;
+      width: min(820px, calc(100% - 40px));
+      margin: 0 auto;
+      padding: 80px 0 48px;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 24px 0 52px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(48px, 9vw, 76px);
+      line-height: 1;
+      letter-spacing: -0.045em;
+      font-weight: 800;
+    }
+
+    .tagline {
+      margin: 24px auto 0;
+      max-width: 600px;
+      font-size: clamp(21px, 3vw, 27px);
+      line-height: 1.35;
+      font-weight: 600;
+    }
+
+    .intro {
+      margin: 18px auto 0;
+      max-width: 650px;
+      color: var(--secondary);
+      font-size: 17px;
+      line-height: 1.65;
+    }
+
+    .features {
+      margin-top: 14px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+    }
+
+    .feature {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 26px 22px;
+      text-align: center;
+    }
+
+    .feature strong {
+      display: block;
+      font-size: 17px;
+      margin-bottom: 7px;
+    }
+
+    .feature span {
+      color: var(--secondary);
+      font-size: 14px;
+      line-height: 1.45;
+    }
+
+    .games {
+      margin-top: 16px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: 30px;
+    }
+
+    .games h2 {
+      margin: 0 0 18px;
+      font-size: 22px;
+    }
+
+    .game-list {
+      color: var(--secondary);
+      line-height: 1.8;
+      font-size: 16px;
+    }
+
+    footer {
+      width: min(820px, calc(100% - 40px));
+      margin: 0 auto;
+      padding: 28px 0 40px;
+      border-top: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      color: var(--secondary);
+      font-size: 14px;
+    }
+
+    footer nav {
+      display: flex;
+      gap: 20px;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 620px) {
+      main {
+        padding-top: 48px;
+      }
+
+      .features {
+        grid-template-columns: 1fr;
+      }
+
+      footer {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <section class="hero">
+      <h1>PlayStead</h1>
+
+      <p class="tagline">
+        12 games. One app. Play anywhere.
+      </p>
+
+      <p class="intro">
+        PlayStead brings 12 games together in one simple offline collection
+        for iPhone and iPad. Play puzzles, arcade classics and local
+        two-player games whenever you want — no internet connection required.
+      </p>
+    </section>
+
+    <section class="features">
+      <div class="feature">
+        <strong>Offline</strong>
+        <span>No internet connection required.</span>
+      </div>
+
+      <div class="feature">
+        <strong>No Ads</strong>
+        <span>Play without advertising or interruptions.</span>
+      </div>
+
+      <div class="feature">
+        <strong>No Subscription</strong>
+        <span>No recurring payments or accounts.</span>
+      </div>
+    </section>
+
+    <section class="games">
+      <h2>12 Games Included</h2>
+
+      <div class="game-list">
+        Number Merge · Block Puzzle · Sudoku · Pocket Glider · Snake ·
+        Word Grid · Four in a Row · Dots &amp; Boxes · Reaction Duel ·
+        Suit Shift · Minefold · Trimrise
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>© 2026 PlayStead</span>
+
+    <nav>
+      <a href="support.html">Support</a>
+      <a href="privacy.html">Privacy</a>
+    </nav>
+  </footer>
+</body>
+</html>
